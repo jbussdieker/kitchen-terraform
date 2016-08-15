@@ -105,7 +105,7 @@ module Terraform
       self.instance_name = instance_name
       self.kitchen_root = Pathname.new provisioner[:kitchen_root]
       self.logger = logger
-      self.supported_version = /v0.6/
+      self.supported_version = /v0.[67]/
       self.variable_files = provisioner[:variable_files]
       self.variables = provisioner[:variables]
     end
